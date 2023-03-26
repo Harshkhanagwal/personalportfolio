@@ -1,0 +1,239 @@
+.experiencesection {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    justify-content: center;
+
+}
+
+.experiencesection.dark {
+    background-color: #0F0F0F;
+}
+
+.experiencesection.light {
+    background: #F8F8F8;
+
+}
+
+
+.experiencearea {
+    width: 100%;
+    display: flex;
+    padding-top: 30px ;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.experiencearea.dark {
+    background: radial-gradient(31.13% 52.56% at 50% 44.78%, rgba(243, 1, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #0F0F0F;
+}
+
+.experiencearea.light {
+    background: radial-gradient(31.13% 52.56% at 50% 44.78%, rgba(243, 1, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , #F8F8F8;
+}
+
+.exp-sec-heading-ar {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.exp-sec-heading {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #717171;
+}
+
+.ex-bx-out {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+
+    position: relative;
+}
+
+.exp-bararea {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0.4;
+    top: -60px;
+    margin-right: 15px;
+}
+
+.exp-bx {
+    background: #161618;
+    border-radius: 24px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    min-height: 156px;
+    display: flex;
+    align-items: center;
+    transition: ease 0.2s;
+
+}
+
+.ex-bx-out:hover .exp-bararea {
+    opacity: 1;
+}
+
+.exp-bx:hover {
+    border-radius: 12px;
+    border: 1px dashed #C218FB;
+    
+}
+
+.exp-bx-content {
+    margin: 0 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.exp-bx.dark {
+    background: #161618;
+}
+
+.exp-bx.light {
+    background: #F4F2FF;
+
+}
+
+.exp-img {
+    height: 132px;
+    width: 132px;
+    border: 1px solid #4D4D4D;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.exp-details {
+    /*  width: 100%; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.upbx{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+}
+
+.companyName {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.companyName.dark {
+    color: #FFFFFF;
+}
+
+.companyName.light {
+    color: #161618;
+}
+
+.date, .post {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #717171;
+}
+.post{
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 837PX) {
+    .ex-bx-out {
+        /* left: -30px; */
+        display: flex;
+        width: 100%;
+
+    }
+    .upbx{
+        position: static;
+    }
+    .exp-bararea {
+        display: none;
+    }
+
+    .exp-bx {
+        border-radius: 12px;
+        max-width: 400px ;
+        width: 100%;
+        align-self: center;
+        height: 300px;
+        position: relative;
+        /* padding-right: 20px; */
+    }
+
+    .experiencearea {
+        align-items: center;
+    }
+    .exp-details{
+        display: flex;
+        /* top: 40px; */
+        position: relative;
+    }
+    .exp-bx-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 10px;
+
+    }
+    .exp-details {
+        margin-left: 0px;
+        position: relative;
+        top: 50px;
+    }
+    .exp-img{
+        position: absolute;
+        top: 20px;
+        /* width: 100%;    */
+    }
+    .post{
+        bottom: -50px;
+    }
+    
+}
+
+@media screen and (max-width:515px){
+    .ex-bx-out {
+        left: -15px;
+    }
+}
+
+@media screen and (max-width:393px){
+    .companyName{
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+}
+@media screen and (max-width:340px){
+    .ex-bx-out {
+        left: -5px;
+    }
+}

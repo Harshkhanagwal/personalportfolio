@@ -1,0 +1,153 @@
+.quotesec {
+    width: 100%;
+    height: 274px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotesec.dark {
+    background-color: #0F0F0F;
+}
+
+.quotesec.light {
+    background: #F8F8F8;
+
+}
+
+.innerquotesec {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -100px;
+    left: 150px;
+    /* z-index: 99; */
+}
+
+.q-icon.dark {
+    opacity: 1;
+}
+
+.q-icon.light {
+    opacity: 0.3;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+
+    text-align: center;
+
+}
+
+.quote.dark {
+    color: #717171;
+}
+
+.quote.light {
+    color: #7C7C7C;
+}
+
+
+@media screen and (max-width: 945px) {
+    .innerquotesec {
+        scale: 0.8;
+
+    }
+
+    .quote-icon {
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .innerquotesec {
+        scale: 0.8;
+
+    }
+
+    .quote-icon {
+        left: 60px;
+        scale: 0.8;
+    }
+}
+@media screen and (max-width: 772px) {
+    .quote{
+        font-size: 24px;
+    }
+
+    .quote-icon {
+        left: 60px;
+        scale: 0.8;
+    }
+}
+@media screen and (max-width: 664px) {
+    .quote{
+        font-size: 20px;
+    }
+
+    .quote-icon {
+        left: 40px;
+        top: -120px;
+        scale: 0.6;
+    }
+
+    .quotesec {
+        height: 200px;
+    }
+    
+}
+@media screen and (max-width: 556px) {
+    .quote{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .quote-icon {
+        left: 30px;
+        top: -120px;
+        scale: 0.6;
+    }
+
+    .quotesec {
+        height: 180px;
+    }
+    
+}
+@media screen and (max-width: 483px) {
+    .quote{
+        scale: 0.8;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    
+}
+@media screen and (max-width: 372px) {
+    .quote{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .quote-icon {
+        left: -40px;
+        top: -100px;
+        scale: 0.4;
+    }
+
+    .quotesec {
+        height: 120px;
+    }
+    
+}

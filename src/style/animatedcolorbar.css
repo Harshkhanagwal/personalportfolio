@@ -1,0 +1,44 @@
+.animatedcolorbar {
+    background-image: linear-gradient(90deg, #4953F3 0%, #F301FF 100%);
+    width: 100%;
+    height: 6px;
+    transition: ease 0.2s;
+    animation: colorbar 4s ease infinite;
+}
+
+@keyframes colorbar {
+    0% {
+        background-image: linear-gradient(90deg, #4953F3 0%, #F301FF 100%);
+	}
+	10% {
+		background: linear-gradient(90deg, #4953F3 42.08%, #F301FF 100%);
+	}
+	20% {
+		background: linear-gradient(89.83deg, #4953F3 42.25%, #F301FF 136.41%)
+	}
+    30%{
+        background: linear-gradient(270deg, #4953F3 34.17%, #F301FF 138.37%);
+    }
+    40%{
+        background: linear-gradient(270deg, #4953F3 32.5%, #F301FF 100%);;
+    }
+    50%{
+        background: linear-gradient(270deg, #4953F3 0%, #F301FF 100%);
+    }
+    60%{
+        background: linear-gradient(270deg, #4953F3 -1.6%, #F301FF 56.32%);
+    }
+    70%{
+        background: linear-gradient(270deg, #4953F3 -1.6%, #F301FF 27.78%);
+    }
+    80%{
+        background: linear-gradient(270.2deg, #4953F3 -79.73%, #F301FF 28.03%);
+    }
+    90%{
+        background: linear-gradient(89.96deg, #4953F3 -26.28%, #F301FF 75.25%);
+    }
+    100%{
+        background: linear-gradient(90deg, #4953F3 0%, #F301FF 100%);   
+    }
+
+}

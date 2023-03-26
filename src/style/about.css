@@ -1,0 +1,163 @@
+.about {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about.dark {
+    background-color: #0F0F0F;
+}
+
+.about.light {
+    background-color: #F8F8F8;
+}
+
+.about-in {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-f {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 20px 0;
+    line-height: 34px;
+    /* or 106% */
+
+    text-align: center;
+
+    color: #717171;
+}
+
+.about-txt{
+    padding-right: 20px;
+}
+
+.about-txt p {
+    
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: #979797;
+}
+
+.Downloadresume {
+    min-height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Downloadresume.dark{
+    background-color: #0C0C0C;
+}
+.Downloadresume.light{
+    background-color: #fff;
+}
+.dr-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.dr-txt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+
+    color: #717171;
+}
+
+.dr-bt{
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #C218FB;
+    border-radius: 24px;
+    width: 130px;
+    /* margin-top: 24px; */
+    margin-left: 20px;
+    color: #C218FB;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.dr-bt:hover{
+    background: linear-gradient(90deg, #4754F3 0.86%, #F301FF 100%);
+    color: #fff;
+    border: none;
+}
+.a-nam-m{
+    display: none;
+}
+@media screen and (max-width: 479px) {
+
+    .dr-txt {
+        font-size: 14px;
+    }
+    .about-txt{
+        margin-left: 5px;
+    }
+
+    .about-f{
+        position: relative;
+        left: -20px;
+    }
+}
+
+
+@media screen and (max-width: 557px) {
+
+    .about-f{
+        scale: 0.9;
+    }
+    .about-txt{
+        /* margin-left: -40px; */
+        padding: 10px;
+    }
+    .about-txt p {
+
+    font-size: 14px;
+    text-align: left;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .about-f{
+        scale: 0.8;
+        font-size: 28px;
+        margin-left: -30px;
+        margin-bottom: 0px;
+    }
+    
+}
+@media screen and (max-width: 435px) {
+
+    .about-f{
+        scale: 0.8;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 510px) {
+
+
+    .a-nam-m{
+        display: block;
+        margin-left: 10px;
+    }
+    .a-nam{
+        display: none;
+    }
+    
+}
+

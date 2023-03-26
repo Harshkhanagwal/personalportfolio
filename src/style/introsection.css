@@ -1,0 +1,148 @@
+.introsec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.introsec.dark {
+    background-color: #0C0C0C;
+}
+
+.introsec.light {
+    background-color: #fff;
+}
+
+.inner-introsec {
+    width: 100%;
+    margin: 50px 0;
+    flex-direction: column;
+    /* background-color: #fff; */
+}
+
+.tag-name {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: #7C7C7C
+}
+
+.name-bx-code {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+}
+
+.know-more {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+.comment-2{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #7C7C7C;
+    /* margin-left: 24px; */
+    opacity: 0.5;
+}
+.blog-bt-ar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.readblog {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #7C7C7C;
+    /* margin-left: 24px; */
+
+}
+
+.readblog-bt {
+    width: 151px;
+    height: 40px;
+    border: 1px solid #C417FB;
+    border-radius: 24px;
+    background-color: transparent;
+    margin-left: 20px;
+    color: #C417FB;
+    font-size: 12px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.readblog-bt:hover{
+    font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width: 409px) {
+    .tag-name {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 4px;
+    }
+}
+@media screen and (max-width: 517px) {
+    
+.know-more {
+    scale: 0.8;
+    left: -20px;
+}
+}
+.readmore{
+    display: none;
+}
+@media screen and (max-width: 498px) {
+    
+.comment-2 {
+    scale: 0.8;
+    position: relative;
+    left: -40px;
+}
+}
+@media screen and (max-width: 495px) {
+    .readmore{
+        display: block;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .know-more{
+        display: none;
+    }
+}

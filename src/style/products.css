@@ -1,0 +1,165 @@
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projects.dark {
+    background-color: #0F0F0F;
+}
+
+.projects.light {
+    background-color: #F8F8F8;
+}
+
+.projectsec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 300px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.productcard:hover{
+    border: 1px dashed #C218FB;
+}
+
+.productcard.dark {
+    background-color: #161618;
+}
+
+.productcard.light {
+    background-color: #fff;
+}
+
+.productcard.dark {
+    background-color: #161618;
+}
+
+.imgarea {
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    position: relative;
+}
+
+.projectdetails {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.project-name {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #717171;
+}
+
+
+.detail-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.project-summary {
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.project-link {
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.project-link:hover {
+    opacity: 1;
+}
+
+.detail-txt,
+.detail-txt-2 {
+    font-size: 12px;
+    line-height: 12px;
+    color: #717171;
+}
+
+.detail-txt{
+    margin-top: 6px;
+    line-height: 14px;
+}
+
+.detail-txt {
+    opacity: 0.8;
+}
+
+.detail-txt-2 {
+    position: absolute;
+    bottom: 5px;
+}
+
+
+@media screen and (max-width: 582px) {
+    .product-gallery {
+        position: relative;
+        left: -20px;
+    }
+}
+/* 
+@media screen and (max-width: 514px) {
+    .product-gallery {
+        position: relative;
+        left: -50px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .productcard {
+        scale: 0.8;
+        margin: -10px 10px;
+    }
+
+}
+
+@media screen and (max-width: 438px) {
+    .productcard {
+        scale: 0.7;
+        margin: -20px 10px;
+    }
+    .product-gallery {
+        position: relative;
+        left: -90px; */
+    /* }
+} */

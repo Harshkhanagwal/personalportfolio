@@ -1,0 +1,70 @@
+.loader-area {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C0C0C;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(73, 83, 243, 0.142) 0%, rgba(243, 1, 255, 0) 100%), #0F0F0F;
+    ;
+}
+
+.logo-ar-loader {
+    position: fixed;
+    opacity: 0.3;
+    scale: 4;
+    margin-top: -140px;
+}
+
+.loader-txt {
+    font-size: 24px;
+    opacity: 0.7;
+    
+    animation: loadingtxt 0.7s infinite;
+}
+
+.colorbar-loading {
+    height: 2px;
+    width: 40px;
+    background: linear-gradient(90deg, #4953F3 0%, #F301FF 100%);
+    border-radius: 25px;
+    margin-top: 10px;
+    opacity: 0.7;
+    animation: loadingbar 0.7s infinite;
+}
+
+@keyframes loadingtxt {
+    0% {
+        opacity: 0.5;
+        font-size: 22px;
+    }
+
+    70% {
+        opacity: 1;
+        font-size: 24px;
+
+    }
+
+    100% {
+        opacity: 0.5;
+        font-size: 22px;
+
+    }
+}
+
+@keyframes loadingbar{
+    0%{
+        opacity: 0.5;
+        width: 40px ;
+    }
+    70%{
+        opacity: 1;
+        width: 120px;
+    }
+    100%{
+        opacity: 0.5;
+        width: 40px;
+    }
+}

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* display: none; */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* border-radius: 10px; */
+    background-color: #0F0F0F;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    /* background: red;  */
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+
+    background-image: linear-gradient( #4953F3 0%, #F301FF 100%);
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+  }
+
+body {
+    background-color: #0F0F0F;
+    overflow-x: hidden;
+}
+
+
+.main {
+    transition: 0.4s;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y:inherit;
+}
+
+.container {
+    display: flex;
+    max-width: 1240px;
+}
+
+.container-c {
+    display: flex;
+    max-width: 1140px;
+}
+
+.txt {
+    display: flex;
+    font-size: 20px;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.g-txt {
+    width: auto;
+    background-image: linear-gradient(89.94deg, #4953F3 0.98%, #F301FF 99.94%);
+    background-clip: text;
+    color: transparent;
+
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-iconbar {
+    height: 4px;
+    width: 30px;
+    transition: ease 0.4s;
+    border-radius: 24px;
+    background-color: #717171;
+}
+
+.bar1 {
+    width: 12px;
+    margin-left: auto;
+}
+
+.bar2 {
+    margin: 9px 0;
+}
+
+.bar3 {
+    width: 18px;
+    margin-left: auto;
+}
+
+.r1 {
+    rotate: -45deg;
+}
+
+.link{
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+
+.bar-hide {
+    /* width: 0; */
+    opacity: 0;
+    margin-left: auto;
+}
+
+.r2 {
+    rotate: 45deg;
+    position: relative;
+    top: -6px;
+}
+
+.themebt {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    line-height: 24px;
+    color: #717171;
+}
+
+
+.t32 {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.t24 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.code-bx-1 {
+    display: flex;
+}
+
+.code-bx-2 {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.code-bx-3 {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.comment {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+
+    color: #7C7C7C;
+    margin-left: 24px;
+    opacity: 0.5;
+}
+
+.code-txt {
+    margin-left: 50px;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #7C7C7C
+}
+
+@media screen and (max-width: 1172px) {
+    .container-c{
+        padding: 0 20px;
+    } 
+}
+@media screen and (max-width: 832px) {
+    .code-bx-2{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .comment{
+        margin-top: 10px;
+        margin-left: 0;
+        
+    }
+}
+@media screen and (max-width: 610px) {
+    .code-bx-2, .code-bx-3, .code-txt{
+        margin-left: 30px;
+    }
+   
+}
+@media screen and (max-width: 580px) {
+    .t32{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .t24{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .comment{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 409px) {
+    .tag-name{
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 4px;
+    }
+    .t24{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .t32{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .code-bx-2 {
+        margin-top:5px ;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 373px) {
+    .code-txt{
+        text-align: left;
+    }
+    .comment{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .code-bx-2, .code-bx-3, .code-txt{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .name-bx-code{
+        scale: 0.9;
+    }
+}
