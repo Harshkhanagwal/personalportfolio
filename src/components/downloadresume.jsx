@@ -10,7 +10,7 @@ const Downloadresume = () => {
         <>
             <div className={`Downloadresume main ${theme}`}>
                 <div className="container-c dr-inner">
-                    <p className='dr-txt'>For more details download my : </p> <button className='dr-bt'>Resume</button>
+                    <p className='dr-txt'>For more details download my : </p> <a href="resume.pdf" download><button className='dr-bt'>Resume</button></a>
                 </div>
             </div>
         </>
