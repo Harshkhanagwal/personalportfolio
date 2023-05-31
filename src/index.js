@@ -6,10 +6,10 @@ import './style/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
     <GlobalData>
       <App />
     </GlobalData>
-  </React.StrictMode>
+
 );
 
