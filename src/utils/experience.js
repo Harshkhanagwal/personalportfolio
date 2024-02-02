@@ -4,7 +4,7 @@ const experience = [
         post : "Web Development Intern",
         date_started : "July 2023",
         date_end : "Aug 2023",
-        comapany_logo : "https://media.licdn.com/dms/image/C4D0BAQGBFWfvWI_bjg/company-logo_200_200/0/1653861124068?e=1701302400&v=beta&t=INj4QoaG92nahEGr0h0D1onX8gUylDSmrOTn7FcQoVM"
+        comapany_logo : "https://media.licdn.com/dms/image/C4D0BAQGBFWfvWI_bjg/company-logo_200_200/0/1653861124728/radionicstechnology_logo?e=1715212800&v=beta&t=B13ig7-J9SsXMK-evg6AumnJYbDFB1Pd1_6yOzB-ras"
     },
     {
         company_name : "Freelance Developer",
