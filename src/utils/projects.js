@@ -20,7 +20,7 @@ const projects = [
         dis :"AI based Article & text summarizer",
         technologies : "ReactJS, Figma, API",
         github : "https://github.com/Harshkhanagwal/AI-Article-extractor-reactjs",
-        link : "https://textevoke-ai.netlify.app",
+        link : "https://textevoke.netlify.app",
         img : '/images/Projects/textevoke.png'
     },
     {
